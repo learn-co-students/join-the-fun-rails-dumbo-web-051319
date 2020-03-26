@@ -5,3 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+5.times do
+  Taxi.create()
+  Passenger.create()
+end
+
+Ride.create(taxi_id: 1, passenger_id: 1)
+Ride.create(taxi_id: 1, passenger_id: 2)
+Ride.create(taxi_id: 1, passenger_id: 3)
+Ride.create(taxi_id: 2, passenger_id: 1)
+Ride.create(taxi_id: 3, passenger_id: 1)
+Ride.create(taxi_id: 2, passenger_id: 3)
